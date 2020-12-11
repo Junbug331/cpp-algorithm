@@ -54,6 +54,21 @@ void PrimeFactorization(int n, int* f, int* exep, int* len)
     }
 }
 
+void sieveOfEratosthenes(int limit, bool *isPrime)
+{
+    for (int i = 2; i < limit; i++)
+        isPrime[i] = true;
+    
+    for (int i = 2; i < limit / 2; i++)
+    {
+        if (isPrime[i])
+        {
+            for (int j = i * 2; j < limit; j += i)
+                isPrime[j] = false;
+        }
+    }
+}
+
 int main()
 {
     cout << "Testing isPrime() " << endl;
@@ -83,6 +98,20 @@ int main()
     }
     result.replace(result.size()-3, 3, "");
     cout << result << endl;
+    cout << endl;
+
+    cout << "Testing SieveOfEratosthenes()" << endl;
+    cout << "Printing out all the prime numbers from 2 to 50" << endl;
+    bool isPrime[100];
+    int limit = 50;
+    sieveOfEratosthenes(limit, isPrime);
+    for (int i = 2; i < limit; i++)
+    {
+        if (isPrime[i])
+            cout << i << " ";
+    }
+    cout << endl;
+    cout << endl;
 
     return 0;
 }
