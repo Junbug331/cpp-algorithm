@@ -2,7 +2,6 @@
 #include <math.h>
 #include <string>
 
-
 using namespace std;
 
 bool isPrime(int n)
@@ -102,8 +101,9 @@ int main()
 
     cout << "Testing SieveOfEratosthenes()" << endl;
     cout << "Printing out all the prime numbers from 2 to 50" << endl;
-    bool isPrime[100];
+   
     int limit = 50;
+    bool isPrime[++limit];
     sieveOfEratosthenes(limit, isPrime);
     for (int i = 2; i < limit; i++)
     {
