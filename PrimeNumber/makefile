@@ -9,7 +9,7 @@ LFLAGS += -Wall
 #Libraray link
 LDFLAGS += -lc
 
-TARGET = PrimeNuber
+TARGET = PrimeNumber
 
 SRCS = $(wildcard *.cpp)
 OBJS = $(patsubst %.cpp, %.o, $(SRCS))
@@ -28,7 +28,6 @@ INCL_DIR = include/
 
 ## Replaces right below
 $(TARGET) : ${OBJS}
-	mkdir build
 	$(CXX) $(LFLAGS) $^ ${LDFLAGS} -o build/$@
 	rm -f *.o
 #maketest : maketest.o apples.o things.o
@@ -37,7 +36,7 @@ $(TARGET) : ${OBJS}
 #  $^  -> name of all the prerequisits.   $^ = $(OBJS) = maketest.o things.o apples.o
 
 clean :
-	rm -rf build && rm -f *.o $(TARGET) 
+	rm -rf build/* && rm -f *.o $(TARGET) 
 
 tar:
 	tar -cfv $(TARGET).tar $(TARGET) *.cpp *.h
