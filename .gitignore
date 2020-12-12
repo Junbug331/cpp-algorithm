@@ -1,6 +1,7 @@
 ./makefile
 .vscode
 
-PrimeNumber/build/PrimeNumber
+PrimeNumber/build/*
 Modular/build/*
+
 

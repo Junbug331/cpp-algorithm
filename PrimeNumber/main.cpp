@@ -81,13 +81,12 @@ int main()
         }
     }
     cout<<endl;
-
-    cout << "Testing PrimeFactorization() " << endl;
-    cout << "Prime factoriztion of 100 is " << endl;
     
-    int n = 1020;
+    int n = 3465;
     int f[100], exep[100];
     int len;
+    cout << "Testing PrimeFactorization() " << endl;
+    cout << "Prime factoriztion of " << n << " is " << endl;
     PrimeFactorization(n, f, exep, &len);
 
     string result = "";
