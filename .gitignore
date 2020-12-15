@@ -4,4 +4,6 @@
 PrimeNumber/build/*
 Modular/build/*
 PigeonholePrinciple/build/*
-
+Arrays/PartialSums/build/*
+Arrays/RangeUpdateTrick/build/*
+Arrays/FrequencyArray/build/*

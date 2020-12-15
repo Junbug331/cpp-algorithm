@@ -46,7 +46,7 @@ int findNumber(int n)
         }
         fr[cur_rem] = i;
     }
-    return result;
+    return result; 
 }
 
 
