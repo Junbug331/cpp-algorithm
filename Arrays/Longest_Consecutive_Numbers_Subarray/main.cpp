@@ -25,13 +25,13 @@ int LongestConsecNumSubarray(int a[], int n)
                 if (ans < (right - left + 1))
                 {
                     ans = right - left + 1;
-                    start = left;
+                    start = left;  
                     end = right;
                 }
             }       
         }
     }
-    
+
     std::cout << "[" << start << ", " << end<< "] = " << ans << std::endl;
     for (int i = start; i <= end; i++)
         std::cout << a[i] << " ";
@@ -41,6 +41,7 @@ int LongestConsecNumSubarray(int a[], int n)
 }
 
 int main()
+
 {
     int a[] = {3, 7, 1, 4, 2, 5, 3, 8, 10, 9};
     int n = sizeof(a) / sizeof(a[0]);
