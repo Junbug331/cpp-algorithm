@@ -10,3 +10,8 @@ Arrays/FrequencyArray/build/*
 Arrays/MaximumSumSubArray/build/*
 Arrays/Longest_Consecutive_Numbers_Subarray/build/*
 Arrays/Sliding_Window_Technique/build/*
+Arrays/SDL_Vector/build/*
+Matrices/Matrix/build/*
+Matrices/PartialSumsOnMatrix/build/*
+Matrices/MaximumSumSubMatrix/build/*
+Matrices/MaximumSizeOfSquareFullOfOne/build/*
