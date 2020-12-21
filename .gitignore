@@ -11,6 +11,7 @@ Arrays/MaximumSumSubArray/build/*
 Arrays/Longest_Consecutive_Numbers_Subarray/build/*
 Arrays/Sliding_Window_Technique/build/*
 Arrays/SDL_Vector/build/*
+Arrays/SubarrayThatSumUptoK/build
 Matrices/Matrix/build/*
 Matrices/PartialSumsOnMatrix/build/*
 Matrices/MaximumSumSubMatrix/build/*
