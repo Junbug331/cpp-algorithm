@@ -85,7 +85,7 @@ int maxSumSubArray_partialSum(int a[], int n)
         if (s[i] <= minSubArrSum)
         {
             minSubArrSum = s[i];
-            start = i + 1;
+            start = i + 1; 
         }
     }
     
