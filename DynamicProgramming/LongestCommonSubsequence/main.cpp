@@ -16,7 +16,7 @@ lcs("aab", "azb")
 
 
 */
-
+#include <memory>
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -75,14 +75,31 @@ int lcs_DP(string s1, string s2)
         }
         cout << "\n";
     }
+    int ans = cache[s1.size()][s2.size()]; 
 
-    return cache[s1.size()][s2.size()];
+    for (int i = 0; i < s2.size()+1; i++)
+        delete[] cache[i];
+    delete[] cache;
+
+    return ans;
 }
 
 int main()
 {
     cout << lcs_recur("GXTXAYB", "AGGTAB") << "\n";
     cout << lcs_DP("GXTXAYB", "AGGTAB") << "\n";
+
+    unique_ptr<int*[]> cache(new int*[5]);
+    int cnt = 0;
+    for (int i = 0; i < 5; i++)
+    {
+        unique_ptr<int[]> cache_i(new int[5]);
+        for (int j = 0; j < 5; j++)
+            cache_i[j] = cnt+j;
+        
+        
+    }
+
     return 0;
 }
 
