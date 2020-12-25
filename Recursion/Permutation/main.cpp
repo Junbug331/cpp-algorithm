@@ -61,7 +61,6 @@ vector<vector<int> >permutations_backtrack(vector<int> arr)
 }
 
 // String
-
 void _permutations(string prefix, string suffix, vector<string> &results)
 {
     if (suffix.length() == 0)
@@ -131,6 +130,7 @@ vector<string> permute(string input)
     
     string str = "";
     vector<int>count;
+
     for (auto const& entry : countMap)
     {
         str += string(1, entry.first);

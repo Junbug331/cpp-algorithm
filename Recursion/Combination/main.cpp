@@ -56,12 +56,57 @@ int comb(int n, int k)
     return comb(n-1, k-1) + comb(n-1, k);
 }
 
+
+/*
+Generate All subset of Size K
+n = 3
+k = 2
+
+[
+    [1.2]
+    [1,3]
+    [2,3]
+]
+
+*/
+
+void Combinations_(int offset, int n, int k, vector<int> partial, vector<vector<int>> &combinations)
+{
+    if (partial.size() == k)
+    {
+        combinations.push_back(partial);
+        return;
+    }
+
+    int spaceLeft = k - partial.size();
+    for (int i = offset; i <= n && spaceLeft <= n - i + 1; i++)
+    {
+        partial.push_back(i);
+        Combinations_(i + 1, n, k, partial, combinations);
+        partial.erase(partial.end() - 1 );
+    }
+}
+
+vector<vector<int>> Combinations(int n, int k)
+{
+    vector<vector<int>> result;
+
+    Combinations_(1, n, k, vector<int>(), result);
+
+    return result;
+}
+
+
 int main()
 {
-    string str = "abcd";
-    for (auto elem : combination(str))
-        cout << elem << "\n";
-    cout << "\n";
+    for (auto const& vec : Combinations(6, 3))
+    {
+        for (auto const& elem : vec)
+        {
+            cout << elem << " ";
+        }
+        cout << "\n";
+    }
 
     return 0;
 }
