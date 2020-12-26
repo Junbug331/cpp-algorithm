@@ -31,5 +31,6 @@ Recursion/TheNQueens/build
 Stack/ValidParentheses/build
 Stack/FirstGreaterElement/build
 Stack/LargestRectangularAreaInaHistogram/build
+Stack/MaximumSizeRectangle/build
 DynamicProgramming/knapsack/build
 DynamicProgramming/LongestCommonSubsequence/build

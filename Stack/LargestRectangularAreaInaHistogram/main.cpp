@@ -40,6 +40,8 @@ public:
             }
             st.push(i);
         }
+
+        // Clear the stack memory to reuse the stack
         while (!st.empty())
             st.pop();
         
@@ -68,8 +70,8 @@ public:
             //when there is no smaller element left of h[i] 
             else if (Left[i] == -1)
             {
-                ans = max(ans, h[i] * (Right[i] - i) * 1LL);
-                cout << "Area when h[" << i <<"] = " << h[i] << " is " << h[i] * (Right[i] - i) * 1LL << "\n";
+                ans = max(ans, h[i] * Right[i] * 1LL);
+                cout << "Area when h[" << i <<"] = " << h[i] << " is " << h[i] * Right[i] * 1LL << "\n";
             }
             else if (Right[i] == -1)
             {
