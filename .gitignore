@@ -33,5 +33,6 @@ Stack/ValidParentheses/build
 Stack/FirstGreaterElement/build
 Stack/LargestRectangularAreaInaHistogram/build
 Stack/MaximumSizeRectangle/build
+Deque/Mininum_of_K-length_Subarrays/build
 DynamicProgramming/knapsack/build
 DynamicProgramming/LongestCommonSubsequence/build
