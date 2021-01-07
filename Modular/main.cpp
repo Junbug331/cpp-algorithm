@@ -4,6 +4,7 @@
 
 using namespace std;
 using namespace chrono;
+
 // (a^n) % MOD
 int fastExpo_recur(int a, long long n, int MOD)
 {
@@ -16,7 +17,15 @@ int fastExpo_recur(int a, long long n, int MOD)
     // a^n = a * a^(n-1)
     return (1LL * a * fastExpo_recur(a, n-1, MOD)) % MOD;
 }
-
+/*
+3^5
+f(3,5)
+3 * f(3,4)
+3 * f(3*3, 2)
+3 * f(3*3 * 3*3, 1)
+3 * 3*3 * 3*3 * f(3*3 * 3*3, 0)
+3 * 3*3 * 3*3 * 1 = 3^5
+*/
 
 int fastExpo_iter(int a, long long n, int MOD)
 {
@@ -30,6 +39,7 @@ int fastExpo_iter(int a, long long n, int MOD)
     /// 4. n is odd     : 16 * 16^2, a = 16, n = 2, ans = 32
     /// 5. n is even    : (256^1), a = 256, n = 1, ans = 32
     /// 6. n is odd     : 256 * 256^0, a = 256, n = 0, ans = 256 * 32
+
     if ( n  == 0)
         return 1;
 
@@ -40,8 +50,11 @@ int fastExpo_iter(int a, long long n, int MOD)
             a = (1LL * a * a) % MOD;
             n /= 2;
         }
-        result = (1LL * result * a) % MOD;
-        n--;
+        else
+        {
+            result = (1LL * result * a) % MOD;
+            n--;
+        }
     }
     return result;
 }
