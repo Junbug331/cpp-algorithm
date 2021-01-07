@@ -27,8 +27,10 @@ int slidingWindow(int a[], int n, int k)
     if (--fr[a[Right--]] == 0)
         cnt--;
     
+    ans = Right;
+
     // Second Loop from (index_2 to index_n)
-    if (int Left = 2; Left <= n; Left++)
+    for (int Left = 2; Left <= n; Left++)
     {
         /// del a[Left - 1] from fr
         /// if deleted element was a distinct num, decremeant counter
@@ -44,13 +46,14 @@ int slidingWindow(int a[], int n, int k)
             if (cnt > k)
                 break;
         }
+        // if Right = n, meanig while loop didn't enter break condition
         if (cnt <= k)
-        {
-            return ans > (n - Left + 1) ? ans : (n - Left + 1);
-        }
+            return std::max(ans, n - Left + 1);
+        
         if ( --fr[a[Right--]] == 0)
             cnt--;
-        ans = ans > (Right - Left + 1) ? ans : (Right - Left + 1);
+
+        ans = std::max(ans, Right-Left+1);
     }
 
     return ans;
