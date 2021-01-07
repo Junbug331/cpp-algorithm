@@ -19,7 +19,7 @@ void PrimeFactorization(int n, int* f, int* exep, int* len)
     int d = 2;
     *len = 0;
     
-    if ( n == 1)
+    if ( n == 1 )
     {
         (*len)++;
         f[*len] = 2;
@@ -55,10 +55,10 @@ void PrimeFactorization(int n, int* f, int* exep, int* len)
 
 void sieveOfEratosthenes(int limit, bool *isPrime)
 {
-    for (int i = 2; i < limit; i++)
+    for (int i = 2; i <= limit; i++)
         isPrime[i] = true;
     
-    for (int i = 2; i < limit / 2; i++)
+    for (int i = 2; i <= limit / 2; i++)
     {
         if (isPrime[i])
         {
