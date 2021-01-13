@@ -102,7 +102,7 @@ int main()
     int n = sizeof(a) / sizeof(a[0]);
     int k = 3;
 
-    SlidingWinodw(a, n, k);
+    slidingWindow(a, n, k);
 
     return 0;
 }
