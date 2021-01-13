@@ -35,5 +35,7 @@ Stack/LargestRectangularAreaInaHistogram/build
 Stack/MaximumSizeRectangle/build
 Deque/Mininum_of_K-length_Subarrays/build
 Deque/MaximumSumSubarray_with_given_length/build
+HashTable/NumOfPairsOfGivenSum/build
+HashTable/ElementsSumUptoK/build
 DynamicProgramming/knapsack/build
 DynamicProgramming/LongestCommonSubsequence/build
