@@ -124,7 +124,7 @@ double findMedianOfTwoSortedArrays_optimized(vector<int>& arr1, vector<int>& arr
         if (maxLeftX <= minRightY && maxLeftY <= minRightX)
         {
             if ((x + y) % 2 == 0)
-                return max(maxLeftX, maxLeftY) + min(minRightX, minRightY) / 2.0;
+                return (max(maxLeftX, maxLeftY) + min(minRightX, minRightY)) / 2.0;
             else
                 return max(maxLeftX, maxLeftY);
         }
