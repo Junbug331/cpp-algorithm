@@ -1,3 +1,12 @@
+/*
+Statement Given an array of N integers, find 6 of them,
+which added together gives sum S. You can take an integer
+any number of times
+
+N = 5, nums = [3, -7, 2, -1, -10], S = 21
+Answers : (3, 3, 7, 2, -1) etc
+
+*/
 #include <iostream>
 #include <vector>
 #include <unordered_map>

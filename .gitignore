@@ -38,5 +38,6 @@ Deque/MaximumSumSubarray_with_given_length/build
 HashTable/NumOfPairsOfGivenSum/build
 HashTable/ElementsSumUptoK/build
 HashTable/HilbertHotel/build
+Heap/connect_n_ropes_min_cost/build
 DynamicProgramming/knapsack/build
 DynamicProgramming/LongestCommonSubsequence/build

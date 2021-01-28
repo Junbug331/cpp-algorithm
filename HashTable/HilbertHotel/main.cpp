@@ -37,7 +37,7 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
-    /*
+    
     ll t;
     cin >> t;
 
@@ -70,13 +70,6 @@ int main()
         else
             cout << "NO" << "\n";
     }
-    */
 
-    vector<int> rooms = {-239, -2, -100, -3, -11};
-    if (valid_shuffle(rooms))
-        cout << "YES" << "\n";
-    else
-        cout << "NO" << "\n";
-    
     return 0;
 }

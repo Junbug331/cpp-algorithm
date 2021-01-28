@@ -102,7 +102,7 @@ int main()
     cout << "Printing out all the prime numbers from 2 to 50" << endl;
    
     int limit = 50;
-    bool isPrime[++limit];
+    
     sieveOfEratosthenes(limit, isPrime);
     for (int i = 2; i < limit; i++)
     {
