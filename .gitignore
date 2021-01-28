@@ -39,5 +39,6 @@ HashTable/NumOfPairsOfGivenSum/build
 HashTable/ElementsSumUptoK/build
 HashTable/HilbertHotel/build
 Heap/connect_n_ropes_min_cost/build
+Greedy/Knapsack/build
 DynamicProgramming/knapsack/build
 DynamicProgramming/LongestCommonSubsequence/build
