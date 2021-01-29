@@ -42,5 +42,6 @@ Heap/connect_n_ropes_min_cost/build
 Greedy/Knapsack/build
 Greedy/ActivitySelection/build
 Greedy/MinPlatform/build
+Greedy/KillTheMonster/build
 DynamicProgramming/knapsack/build
 DynamicProgramming/LongestCommonSubsequence/build
