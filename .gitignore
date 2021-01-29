@@ -41,5 +41,6 @@ HashTable/HilbertHotel/build
 Heap/connect_n_ropes_min_cost/build
 Greedy/Knapsack/build
 Greedy/ActivitySelection/build
+Greedy/MinPlatform/build
 DynamicProgramming/knapsack/build
 DynamicProgramming/LongestCommonSubsequence/build
