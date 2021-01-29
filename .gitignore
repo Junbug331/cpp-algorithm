@@ -40,5 +40,6 @@ HashTable/ElementsSumUptoK/build
 HashTable/HilbertHotel/build
 Heap/connect_n_ropes_min_cost/build
 Greedy/Knapsack/build
+Greedy/ActivitySelection/build
 DynamicProgramming/knapsack/build
 DynamicProgramming/LongestCommonSubsequence/build
