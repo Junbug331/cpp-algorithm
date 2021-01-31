@@ -47,5 +47,5 @@ Greedy/MinNumOfBoats/build
 DynamicProgramming/knapsack/build
 DynamicProgramming/LongestCommonSubsequence/build
 Sorting/BubbleSort/build
-Sorting/Insertion/build
-Sorting/Selection/build
+Sorting/InsertionSort/build
+Sorting/SelectionSort/build
