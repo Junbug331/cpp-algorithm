@@ -1,5 +1,6 @@
 #include <iostream>
 #include <utility>
+#include <memory>
 
 using namespace std;
 
@@ -7,8 +8,10 @@ void Merge(int A[], int low, int mid, int high)
 {
     int i = low;
     int j = mid+1;
-    int k = low;
-    int B[high+1];
+    int k = 0;
+    //unique_ptr<int[]> B(new int[high-low+1]);
+    unique_ptr<int[]> B = make_unique<int[]>(10);
+
     while (i <= mid && j <= high)
     {
         if (A[i] < A[j])
@@ -21,8 +24,9 @@ void Merge(int A[], int low, int mid, int high)
     while (j <= high)
         B[k++] = A[j++];
 
-    for (int i=low; i<=high; i++)
-        A[i] = B[i];
+    for (int i=0; i<k; i++)
+        A[low+i] = B[i];
+
 }
 
 void MergeSort_iter(int A[], int n)
@@ -70,7 +74,7 @@ int main()
         printf("%d ", A[i]);
     printf("\n"); 
 
-    MergeSort_iter(A,n);
+    MergeSort_recur(A,n);
 
     for (int i=0; i<n; i++)
         printf("%d ", A[i]);
